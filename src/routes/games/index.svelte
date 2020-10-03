@@ -1,13 +1,13 @@
 <script context="module">
-	export function preload() {
-		return this.fetch(`games.json`).then(r => r.json()).then(games => {
-			return { games };
-		});
-	}
-</script>
-
-<script>
-	export let games;
+  const games = [
+    {
+      title: 'Super Mario 64',
+      slug: 'sm64',
+      cover: '../covers/sm64.png',
+      categories: 1,
+      runners: 0
+    }
+  ];
 </script>
 
 <style>
@@ -37,8 +37,8 @@
         <img src={game.cover} alt={game.title}/>
         <h2>{game.title}</h2>
       </a>
-      <span>{game.categories} categories</span>
-      <span>{game.categories} runners</span>
+      <span>{game.categories} category</span>
+      <span>{game.runners} runners</span>
     </article>
 	{/each}
 </section>
