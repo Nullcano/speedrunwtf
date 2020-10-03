@@ -29,6 +29,24 @@
 <body>
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-	<div id="sapper">%sapper.html%</div>
+  <div id="sapper">%sapper.html%</div>
+  <form name="run" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="text" name="game" />
+    <input type="text" name="category" />
+    <input type="text" name="time" />
+    <input type="url" name="video" />
+    <textarea name="message"></textarea>
+  </form>
+  <form name="other" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <select name="type[]" multiple>
+      <option value="category-request">Category Request</option>
+      <option value="game-request">Game Request</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
 </body>
 </html>
