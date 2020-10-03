@@ -70,7 +70,7 @@
 <h1>Submission Forms</h1>
 
 <section>
-  <form class="submission-box" name="run" method="POST" data-netlify="true">
+  <form class="submission-box" name="run" method="POST" data-netlify="true" action="/">
     <h2>Submit a Run</h2>
     <label>
       <i class="fas fa-user"></i>
@@ -96,7 +96,7 @@
     </label>
     <button type="submit">Send <i class="fas fa-paper-plane"></i></button>
   </form>
-  <form class="submission-box" name="other" method="POST" data-netlify="true">
+  <form class="submission-box" name="other" method="POST" data-netlify="true" action="/">
     <h2>Other Inquiries</h2>
     <label>
       <i class="fas fa-user"></i>
